@@ -325,6 +325,7 @@ public class tictactoe {
                 if (exitCode == '1') {
                     break;
                 }
+                System.out.println("Your Turn");
                 moveLocation();
                 System.out.println("Your board");
                 showBoard();
