@@ -298,14 +298,17 @@ public class tictactoe {
         wonToss = rand1.nextInt(2);
 
         if (wonToss == Toss) {
+            System.out.println("You won the toss");
             while (true) {
                 moveLocation();
+                System.out.println("Your board");
                 showBoard();
                 winner(userTurn);
                 if (exitCode == '1') {
                     break;
                 }
                 comLocation();
+                System.out.println("Computer Board");
                 showBoard();
                 winner(computerTurn);
                 if (exitCode == '1') {
@@ -313,14 +316,17 @@ public class tictactoe {
                 }
             }
         } else {
+            System.out.println("Computer won the toss");
             while (true) {
                 comLocation();
+                System.out.println("Computer Board");
                 showBoard();
                 winner(computerTurn);
                 if (exitCode == '1') {
                     break;
                 }
                 moveLocation();
+                System.out.println("Your board");
                 showBoard();
                 winner(userTurn);
                 if (exitCode == '1') {
